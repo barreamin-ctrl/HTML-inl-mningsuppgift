@@ -1,0 +1,126 @@
+/* Grund */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+main,
+.site-header,
+footer {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 6px;
+}
+
+/* Meny (BEM) */
+.site-header__list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.site-header__link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.site-header__link:hover,
+.site-header__link--active {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* Kort för projekt och referenser (BEM) */
+.project-card,
+.testimonial-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.project-card--featured,
+.testimonial-card--featured {
+    border-left: 4px solid #1d4ed8;
+}
+
+.project-card__title,
+.testimonial-card__author {
+    margin-bottom: 8px;
+}
+
+.project-card__button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: #1d4ed8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Tabeller (BEM) */
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.skills-table__header,
+.skills-table__cell {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.skills-table__row--striped {
+    background-color: #f9fafb;
+}
+
+/* Formulär (BEM) */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+}
+
+.contact-form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-form__input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form__submit {
+    padding: 10px 16px;
+    background: #1d4ed8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
