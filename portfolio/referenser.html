@@ -4,33 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Referenser och omdömen - Mr. X</title>
-    <meta name="description" content="Omdömen och referenser för Mr. X från tidigare projekt, handledare och samarbeten.">
+    <meta name="description" content="Fiktiva referenser och omdömen om Mr X från studier och grupparbeten.">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
-<body>
+<body class="page">
     <header class="site-header">
-        <nav class="site-header__nav" aria-label="Huvudmeny">
-            <ul class="site-header__list">
-                <li class="site-header__item"><a class="site-header__link" href="index.html">Om mig</a></li>
-                <li class="site-header__item"><a class="site-header__link" href="kompetenser.html">Kompetenser</a></li>
-                <li class="site-header__item"><a class="site-header__link" href="projekt.html">Projekt</a></li>
-                <li class="site-header__item"><a class="site-header__link" href="utbildning.html">Utbildning</a></li>
-                <li class="site-header__item"><a class="site-header__link site-header__link--active" href="referenser.html" aria-current="page">Referenser</a></li>
-                <li class="site-header__item"><a class="site-header__link" href="kontakt.html">Kontakt</a></li>    
+        <nav class="main-nav" aria-label="Huvudmeny">
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="index.html">Hem</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="kompetenser.html">Kompetenser</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="projekt.html">Projekt</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="utbildning.html">Utbildning</a></li>
+                <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="referenser.html" aria-current="page">Referenser</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="kontakt.html">Kontakt</a></li>    
             </ul>
         </nav>
     </header>
 
-    <main class="main-content">
+    <main class="site-main">
         <section class="testimonials">
-            <h1 class="testimonials">Referenser och omdömen</h1>
-            <p class="testimonials">Här kan framtida arbetsgivare läsa vad handledare och teammedlemmar säger om att arbeta med Mr. X.</p>
+            <h1 class="testimonials__title">Referenser och omdömen</h1>
+            <p class="testimonials__intro">Här visas påhittade omdömen från en handledare och en gruppmedlem. Personerna och omdömena är fiktiva och ingår i kursprojektet.</p>
 
-            <!-- JS: Växlar mellan att visa omdömen från studier eller arbetsliv -->
+            <!-- Planerad JS-funktion: visa endast omdömen från studier. -->
             <div class="testimonials__controls">
                 <button type="button" class="testimonials__filter-btn"
-                data-js-action="testimonials__filter-btn"
+                data-js-action="filter-testimonials"
                 data-category="studier">
             Visa omdömen från studier    
             </button>
@@ -38,17 +38,17 @@
 
             <div class="testimonials__list" data-js-target="testimonials.container" aria-live="polite">
                 <article class="testimonials-card">
-                    <h2 class="testimonials-card__author">Jimmie Åkesson - Handledare</h2>
+                    <h2 class="testimonials-card__author">Alex Berg - Handledare</h2>
                     <blockquote class="testimonials-card__quote">
-                        <p class="testimonials-card__text">"Mr. X är en strukturerad och noggran lagspelare som alltid sätter användarens behov och tillgänglighet i första rummet.</p>
+                        <p class="testimonials-card__text">"Mr. X är en strukturerad och noggrann lagspelare som alltid sätter användarens behov och tillgänglighet i första rummet."</p>
                     </blockquote>
                     <p class="testimonials-card__role">Projektledare på Fiktiva Webbbyrån AB</p>                    
                 </article>
 
                 <article class="testimonials-card testimonials-card--featured">
-                    <h2 class="testimonials-card__author">Nooshi Dadgostar - Gruppmedlem</h2>
+                    <h2 class="testimonials-card__author">Sara Lind - Gruppmedlem</h2>
                     <blockquote class="testimonials-card__quote">
-                        <p class="testimonials-card__quote">"Väldigt duktig på att hålla ordning i GitHub och se till att hela teamet följer överenskommen struktur."</p>
+                        <p class="testimonials-card__text">"Väldigt duktig på att hålla ordning i GitHub och se till att hela teamet följer överenskommen struktur."</p>
                     </blockquote>
                     <p class="testimonials-card__role">Utvecklare i kursprojektet GIK32J</p>
                 </article>

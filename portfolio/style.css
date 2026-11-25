@@ -124,3 +124,27 @@ footer {
     font-size: 0.9rem;
     color: #666;
 }
+/* Kontaktsida */
+
+.contact {
+    padding: 20px;
+}
+
+.contact__title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact__subtitle {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.contact__text {
+    line-height: 1.6;
+}
+
+.contact__link {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
