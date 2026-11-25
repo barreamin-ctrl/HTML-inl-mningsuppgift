@@ -46,6 +46,35 @@
             <label class="contact-form__label" for="email">E-post</label>
             <input class="contact-form__input"
                    type="email" id="email" name="email" required>
+                   <label class="contact-form__label" for="subject">Ämne</label>
+                   <select class="contact-form__select"
+                           id="subject" name="subject" required>
+                       <option value="">Välj ett ämne</option>
+                       <option value="projekt">Projekt</option>
+                       <option value="samarbete">Samarbete</option>
+                       <option value="ovrigt">Övrigt</option>
+                   </select>
+                   <fieldset class="contact-form__group">
+                    <legend class="contact-form__legend">Vem kontaktar mig?</legend>
+                
+                    <input class="contact-form__radio"
+                           type="radio" id="student"
+                           name="sender" value="student" required>
+                    <label class="contact-form__label" for="student">Student</label>
+                
+                    <input class="contact-form__radio"
+                           type="radio" id="company"
+                           name="sender" value="foretag">
+                    <label class="contact-form__label" for="company">Företag</label>
+                </fieldset>
+                <label class="contact-form__label" for="message">Meddelande</label>
+                <textarea class="contact-form__textarea"
+                     id="message" name="message"
+                     rows="5" required></textarea>
+
+<button class="contact-form__button" type="submit">
+    Skicka
+</button>       
             </form>
         </section>
     </main>
