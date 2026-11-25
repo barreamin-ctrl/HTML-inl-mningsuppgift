@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referenser och omdömen - Mr. X</title>
+    <meta name="description" content="Omdömen och referenser för Mr. X från tidigare projekt, handledare och samarbeten.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-header__nav" aria-label="Huvudmeny">
+            <ul class="site-header__list">
+                <li class="site-header__item"><a class="site-header__link" href="index.html">Om mig</a></li>
+                <li class="site-header__item"><a class="site-header__link" href="kompetenser.html">Kompetenser</a></li>
+                <li class="site-header__item"><a class="site-header__link" href="projekt.html">Projekt</a></li>
+                <li class="site-header__item"><a class="site-header__link" href="utbildning.html">Utbildning</a></li>
+                <li class="site-header__item"><a class="site-header__link site-header__link--active" href="referenser.html" aria-current="page">Referenser</a></li>
+                <li class="site-header__item"><a class="site-header__link" href="kontakt.html">Kontakt</a></li>    
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="testimonials">
+            <h1 class="testimonials">Referenser och omdömen</h1>
+            <p class="testimonials">Här kan framtida arbetsgivare läsa vad handledare och teammedlemmar säger om att arbeta med Mr. X.</p>
+
+            <!-- JS: Växlar mellan att visa omdömen från studier eller arbetsliv -->
+            <div class="testimonials__controls">
+                <button type="button" class="testimonials__filter-btn"
+                data-js-action="testimonials__filter-btn"
+                data-category="studier">
+            Visa omdömen från studier    
+            </button>
+            </div>
+
+            <div class="testimonials__list" data-js-target="testimonials.container" aria-live="polite">
+                <article class="testimonials-card">
+                    <h2 class="testimonials-card__author">Jimmie Åkesson - Handledare</h2>
+                    <blockquote class="testimonials-card__quote">
+                        <p class="testimonials-card__text">"Mr. X är en strukturerad och noggran lagspelare som alltid sätter användarens behov och tillgänglighet i första rummet.</p>
+                    </blockquote>
+                    <p class="testimonials-card__role">Projektledare på Fiktiva Webbbyrån AB</p>                    
+                </article>
+
+                <article class="testimonials-card testimonials-card--featured">
+                    <h2 class="testimonials-card__author">Nooshi Dadgostar - Gruppmedlem</h2>
+                    <blockquote class="testimonials-card__quote">
+                        <p class="testimonials-card__quote">"Väldigt duktig på att hålla ordning i GitHub och se till att hela teamet följer överenskommen struktur."</p>
+                    </blockquote>
+                    <p class="testimonials-card__role">Utvecklare i kursprojektet GIK32J</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="site-footer__text">&copy; 2026 Mr. X. Alla rättigheter förbehållna.</p>
+    </footer>
+</body>
+</html>
