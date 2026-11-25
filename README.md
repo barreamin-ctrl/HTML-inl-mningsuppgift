@@ -12,3 +12,4 @@ Inlämningsuppgift i kursen GIK32J. En digital portfolio byggd för den fiktiva 
 
 ## Övriga filer
 -`css/style.css` - Styling skriven med BEM
+-`js/script.js` - Förberedd JS-fil kopplad till HTML-sidorna data-attribut
