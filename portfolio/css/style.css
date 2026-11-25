@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt - Mr. X Digital Portfolio</title>
+    <meta name="description" content="Tidigare projekt skapde av Mr. X,">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+    <nav class="main-nav" aria-label="Huvudmeny">
+    <ul class="main-nav__list">
+       <li class="main-nav__item"><a class="main-nav__link" href="index.html">Hem</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="Kompetenser.html">Kompetenser</a></li>
+        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="projekt.html">Projekt</a></li>
+   current="page">Projekt</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="utbildning.html">Utbildning</a></li>
+               <li class="main-nav__item"><a class="main-nav__link" href="kontakt.html">Kontakt</a></li>  
+    </ul>
+    </nav>
+    </header>
+
+    <main class="site-main">
+        <section class="projects">
+            <h1 class="projects__title">Projekt</h1>
+   
+            <article class="card">
+                 <h2 class="card__title">Digital Projekt</h2>
+                 <img class="card__image" src="images//projekt1.jpg" alt="Skrärmdump av digital portfolio" width="400" height="250">
+                    <p class="card__text">Ett grupprojekt med fokus på semantisk HTML, BEM och tillgänglighet.</p>
+                    </article>
+                    <section>
+                 </main>
+                 <footer class="site-footer">
+                 <p class="site-footer__text">&copy; 2026 Mr. X</p>
+                 </footer>
+</body>
+</html>
+            
+       
