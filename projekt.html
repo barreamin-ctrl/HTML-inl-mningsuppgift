@@ -26,16 +26,23 @@
     <section class="projects">
       <h1 class="projects__title">Mina projekt</h1>
 
-      <article class="card">
-        <h2 class="card__title">Digital Portfolio</h2>
-        <img class="card__image" src="images/projekt1.jpg" alt="Skärmdump av digital portfolio" width="400" height="250">
-        <p class="card__text">I det här gruppprojektet bygger jag en digital portfolio som presenterar mig, mina kunskaper och min utbildning. Vi använder HTML för innehållet och CSS för utseendet. Jag tränar på sematiska element, BEM och samarbete med Github.</p>
+      <article class="project-card project-card--featured"
+               data-js-action="toggle-details"
+               data-project-id="proj-1"
+               data-js-target="project-details">
+        <h2 class="project-card__title">Digital Portfolio</h2>
+        <img class="project-card__image" src="images/projekt1.jpg" alt="Skärmdump av digital portfolio" width="400" height="250">
+        <p class="project-card__text">I det här gruppprojektet bygger jag en digital portfolio som presenterar mig, mina kunskaper och min utbildning. Vi använder HTML för innehållet och CSS för utseendet.</p>
+
+        <div id="project-details" class="project-card__details project-card__details--hidden">
+          <p>Jag tränar på semantiska element, BEM och samarbete med GitHub.</p>
+        </div>
       </article>
     </section>
   </main>
-
+  
   <footer class="site-footer">
-    <p class="site-footer__text">&copy;2026 Mr. X</p>
+    <p class="site-footer__text">&copy; 2026 Mr. X</p>
   </footer>
 </body>
 </html>

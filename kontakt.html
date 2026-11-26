@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt - Mr X Digital Portfolio</title>
     <meta name="description" content="Kontaktuppgifter till Mr. X.">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 
@@ -35,46 +35,42 @@
 
             <h2 class="contact__subtitle">E-post</h2>
             <p class="contact__text">
-                <a class="contact__link" href="mailto:mrx@example.com">
+                <a class="contact__link" href="mailto:mrx164@hotmail.com">
                     mrx164@hotmail.com
                 </a>
-            </p> <form class="contact-form" action="../tack.php" method="post">
+            </p> 
+
+            <form class="contact-form" action="tack.php" method="post">
                 <label class="contact-form__label" for="name">Namn</label>
-                <input class="contact-form__input"
-                       type="text" id="name" name="name" required>
+                <input class="contact-form__input" type="text" id="name" name="name" required>
             
-            <label class="contact-form__label" for="email">E-post</label>
-            <input class="contact-form__input"
-                   type="email" id="email" name="email" required>
-                   <label class="contact-form__label" for="subject">Ämne</label>
-                   <select class="contact-form__select"
-                           id="subject" name="subject" required>
-                       <option value="">Välj ett ämne</option>
-                       <option value="projekt">Projekt</option>
-                       <option value="samarbete">Samarbete</option>
-                       <option value="ovrigt">Övrigt</option>
-                   </select>
-                   <fieldset class="contact-form__group">
+                <label class="contact-form__label" for="email">E-post</label>
+                <input class="contact-form__input" type="email" id="email" name="email" required>
+                   
+                <label class="contact-form__label" for="subject">Ämne</label>
+                <select class="contact-form__select" id="subject" name="subject" required>
+                    <option value="">Välj ett ämne</option>
+                    <option value="projekt">Projekt</option>
+                    <option value="samarbete">Samarbete</option>
+                    <option value="ovrigt">Övrigt</option>
+                </select>
+                   
+                <fieldset class="contact-form__group">
                     <legend class="contact-form__legend">Vem kontaktar mig?</legend>
                 
-                    <input class="contact-form__radio"
-                           type="radio" id="student"
-                           name="sender" value="student" required>
+                    <input class="contact-form__radio" type="radio" id="student" name="sender" value="student" required>
                     <label class="contact-form__label" for="student">Student</label>
                 
-                    <input class="contact-form__radio"
-                           type="radio" id="company"
-                           name="sender" value="foretag">
+                    <input class="contact-form__radio" type="radio" id="company" name="sender" value="foretag">
                     <label class="contact-form__label" for="company">Företag</label>
                 </fieldset>
+                
                 <label class="contact-form__label" for="message">Meddelande</label>
-                <textarea class="contact-form__textarea"
-                     id="message" name="message"
-                     rows="5" required></textarea>
+                <textarea class="contact-form__textarea" id="message" name="message" rows="5" required></textarea>
 
-<button class="contact-form__button" type="submit">
-    Skicka
-</button>       
+                <button class="contact-form__button" type="submit">
+                    Skicka
+                </button>       
             </form>
         </section>
     </main>
